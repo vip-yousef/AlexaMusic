@@ -38,11 +38,18 @@ from config import BANNED_USERS, lyrical
 from strings import get_command
 from AlexaMusic.utils.database import is_served_user
 
-# Command
-PLAY_COMMAND = get_command("PLAY_COMMAND")
-
-
-@app.on_message(filters.command(PLAY_COMMAND) & filters.group & ~BANNED_USERS)
+@app.on_message(command(["شغل","تشغيل"])
+    & filters.group
+    & ~BANNED_USERS
+)
+@app.on_message(filters.command(["play","vplay","cplay","cvplay",
+            "playforce",
+            "vplayforce",
+            "cplayforce",
+            "cvplayforce",])
+    & filters.group
+    & ~BANNED_USERS
+)
 @PlayWrapper
 async def play_commnd(
     client,
