@@ -8,78 +8,46 @@ def start_pannel(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["S_B_1"],
-                url=f"https://t.me/{app.username}?start=help",
+                text=_["P_B_3"],
+                callback_data=f"LiveStream {videoid}|{user_id}|{mode}|{channel}|{fplay}",
             ),
-            InlineKeyboardButton(text=_["S_B_2"], callback_data="settings_helper"),
+        ],
+        [
+            InlineKeyboardButton(
+                text=_["CLOSE_BUTTON"],
+                callback_data=f"forceclose {videoid}|{user_id}",
+            ),
         ],
     ]
-    if SUPPORT_CHANNEL and SUPPORT_GROUP:
-        buttons.append(
-            [
-                InlineKeyboardButton(text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}"),
-                InlineKeyboardButton(text=_["S_B_3"], url=f"{SUPPORT_GROUP}"),
-            ]
-        )
-    else:
-        if SUPPORT_CHANNEL:
-            buttons.append(
-                [InlineKeyboardButton(text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}")]
-            )
-        if SUPPORT_GROUP:
-            buttons.append(
-                [InlineKeyboardButton(text=_["S_B_3"], url=f"{SUPPORT_GROUP}")]
-            )
     return buttons
 
 
-def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
+def slider_markup(_, videoid, user_id, query, query_type, channel, fplay):
+    query = f"{query[:20]}"
     buttons = [
-        [InlineKeyboardButton(text=_["S_B_8"], callback_data="settings_back_helper")]
-    ]
-    if SUPPORT_CHANNEL and SUPPORT_GROUP:
-        buttons.append(
-            [
-                InlineKeyboardButton(text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}"),
-                InlineKeyboardButton(text=_["S_B_3"], url=f"{SUPPORT_GROUP}"),
-            ]
-        )
-    else:
-        if SUPPORT_CHANNEL:
-            buttons.append(
-                [InlineKeyboardButton(text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}")]
-            )
-        if SUPPORT_GROUP:
-            buttons.append(
-                [InlineKeyboardButton(text=_["S_B_3"], url=f"{SUPPORT_GROUP}")]
-            )
-    buttons.append(
         [
             InlineKeyboardButton(
-                text=_["S_B_5"],
-                url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
-            )
-        ]
-    )
-    if OWNER:
-        buttons.append(
-            [
-                InlineKeyboardButton(text=_["S_B_7"], user_id=OWNER),
-                InlineKeyboardButton(text=_["S_B_7"], user_id=OWNER"),
-            ]
-        )
-    else:
-        if OWNER:
-            buttons.append(
-                [
-                    InlineKeyboardButton(text=_["S_B_7"], user_id=OWNER"),
-                ]
-            )
-        if OWNER:
-            buttons.append(
-                [
-                    InlineKeyboardButton(text=_["S_B_7"], user_id=OWNER),
-                ]
-            )
-    buttons.append([InlineKeyboardButton(text=_["ST_B_6"], callback_data="LG")])
+                text=_["P_B_1"],
+                callback_data=f"MusicStream {videoid}|{user_id}|a|{channel}|{fplay}",
+            ),
+            InlineKeyboardButton(
+                text=_["P_B_2"],
+                callback_data=f"MusicStream {videoid}|{user_id}|v|{channel}|{fplay}",
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text="◁",
+                callback_data=f"slider B|{query_type}|{query}|{user_id}|{channel}|{fplay}",
+            ),
+            InlineKeyboardButton(
+                text=_["CLOSE_BUTTON"],
+                callback_data=f"forceclose {query}|{user_id}",
+            ),
+            InlineKeyboardButton(
+                text="▷",
+                callback_data=f"slider F|{query_type}|{query}|{user_id}|{channel}|{fplay}",
+            ),
+        ],
+    ]
     return buttons
