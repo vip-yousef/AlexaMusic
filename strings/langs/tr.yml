@@ -77,7 +77,7 @@ help_1 : "Daha fazla bilgi için aşağıdaki butonlara tıklayın. Komutlar ve 
 help_2 : "Yardım için PM'den bana ulaşın."
 
 # Settings
-setting_1 : "⚙️ **Müzik Botu Ayarları**\n\n🖇**Grup:** {0}\n🔖**Grup Kimliği:** `{1}`\n\n💡**Aşağıdan istediğiniz işlev butonlarını seçin düzenlemek veya değiştirmek için.**"
+setting_1 : "⚙️ **إعدادات بوت الميوزك**\n\n🖇**المجموعة:** {0}\n🔖**Grup Kimliği:** `{1}`\n\n💡**Aşağıdan istediğiniz işlev butonlarını seçin düzenlemek veya değiştirmek için.**"
 setting_3 : "⁉️ Bu Nedir?\n\n1) Doğrudan: Arama sorgularını doğrudan oynatır. Videoları doğrudan modda oynatmak için -v kullanın.\n\n2) Satır İçi: Video ve ses arasında seçim yapmak için Satır İçi İşaretleme Düğmelerini döndürür."
 setting_4 : "⁉️ Bu Nedir?\n\n👥 Herkes: Bu grupta bulunan yönetici komutlarını (skip, pause, resume vb.) herkes kullanabilir.\n\n🙍 Yalnızca Yönetici: Yalnızca yöneticiler ve yetkili kullanıcılar yönetici komutlarını kullanabilir."
 setting_5 : "Yetkili Kullanıcı Bulunamadı\n\nYönetici olmayan herhangi bir kişinin /auth ile yönetici komutlarımı kullanmasına ve /unauth kullanarak kullanmamasına izin verebilirsiniz"
@@ -132,7 +132,7 @@ cplay_5 : "Yalnızca Kanallar Desteklenir."
 cplay_6 : "Kanalı bu gruba bağlamak için[{0}] kanalın **Sahibi** olmanız gerekir.\n**Kanal Sahibi:** @{1}\n\nAlternatif olarak grubunuzu o kanala bağlayabilirsiniz. ve ardından `/channelplay bağlantılı ile bağlanmayı deneyin`"
 
 #Play
-play_1 : "🔄 Sorgu İşleniyor... Lütfen Bekleyin!"
+play_1 : "🔄 جاري التشغيل انتظر قليلاً!"
 play_2 : "**🏷Kanal Oynatma Modu**\n🔄 Sorgu İşleniyor... Lütfen Bekleyin!\n\n**Bağlı Kanal:** {0}"
 play_3 : "Sorgu İşlenemedi!"
 play_4 : "🖇 **Yalnızca Yöneticiler Oynatır**\nYalnızca Yöneticiler ve Yetkilendirme Kullanıcıları bu grupta müzik çalabilir.\n\nModu /playmode aracılığıyla değiştirin ve zaten yöneticiyseniz, /admincache aracılığıyla admincache'i yeniden yükleyin"
@@ -142,16 +142,16 @@ play_7 : "Üzgünüm! Bot, CPU aşırı yükleme sorunları nedeniyle yalnızca 
 play_8 : "Geçerli Bir Video Dosyası Uzantısı Değil!\n\n**Desteklenen Biçimler:** {0}"
 play_9 : "Video Dosya Boyutu 1 GB'den Küçük Olmalı"
 play_10 : "**Youtube Oynatma Listesi Özelliği**\n\nYoutube Oynatma Listesinin tamamını oynatmak istediğiniz Modu seçin"
-play_11 : "🔘Başlık: **{0}\n\n⏱️Süre:** {1} Dakika"
+play_11 : "🔘العنوان: **{0}\n\n⏱️Süre:** {1} الوقت"
 play_12 : "**Spotify Oynatma Listeleri**\n\n👉Talep Eden:- {0}"
-play_13 : "**Apple Oynatma Listeleri**\n\n👉Talep Eden:- {0}"
+play_13 : "**Apple Oynatma Listeleri**\على خوادمهمn\n👉Talep Eden:- {0}"
 play_14 : "**URL doğrulanamıyor.**\nBot, bu url'nin şu platformlardan birine ait olup olmadığını merak ediyor: Youtube, AppleMusic, Spotify, Resso ve Soundcloud.\n\nM3u8 veya Uzak Bağlantılar için /stream'i kullanabilirsiniz.."
 play_15 : "**Canlı Yayın Algılandı**\n\nSistemler, stream bağlantınızı canlı yayın olarak algıladı. Canlı yayın oynamak istiyormusunuz ?"
 play_16 : "Parça ayrıntıları getirilemedi. başka şarkı dene."
 
 
 #Playlist
-playlist_1 : "**Kullanım:** /play [Müzik Adı veya Youtube Bağlantısı veya Sesi Yanıtla]\n\nBot'un Sunucu Oynatma Listesini oynatmak istiyorsanız! Aşağıdaki butona basın."
+playlist_1 : "**الاستخدام:** /play + [اسم الاغنيه التي تود تشغيلها]\n\nBot'un Sunucu Oynatma Listesini oynatmak istiyorsanız! Aşağıdaki butona basın."
 playlist_2 : "Çalma listeniz alınıyor. Lütfen bekleyin"
 playlist_3 : "Bot Sunucusunda oynatma listeniz yok."
 playlist_4 : "Getirilen Oynatma Listesit:\n\n"
@@ -182,7 +182,7 @@ str_3 : "Youtube canlı yayın akışı yapılamıyor. Canlı Biçim Bulunamadı
 
 #TopPlay
 tracks_1 : "**{0} En İyi 10 Oynatma Listesi işleniyor**\n\n**👉Talep Eden:** {1}\n📢**Kanal Oynatma:** {2}\n\n /stats'a göre En İyi 10 parçayı kontrol edin"
-tracks_2 : "**Hata**\n\nBot'un sunucularında **{0} En İyi 10 Oynatma Listesi** yok. Lütfen başka bir oynatma listesi deneyin"
+tracks_2 : "**خطاء**\n\nBot'un على خوادمهم **{0} En İyi 10 Oynatma Listesi** yok. Lütfen başka bir oynatma listesi deneyin"
 
 
 # TOOLS
@@ -214,58 +214,58 @@ song_11 : "Yükleme Başladı\n\nYükleme hızı yavaş olabilir. Lütfen bekley
 queue_1 : "Lütfen Bekleyin.. Sıra Alınıyor.."
 queue_2 : "Sırada Hiç Birşey Yok."
 queue_3 : "<u>**Queued Tracks:</u>**  [Checkout More Queued Tracks From Here]({0})"
-queue_4 : "⏳ Sıraya eklendi **#{0}\n\n🔘Başlık:** {1}\n**⏱Süre:** {2}\n👉**Talep Eden:** {3}"
+queue_4 : "⏳  تم اضافتها لقائمة التشغيل **#{0}\n\n🔘العنوان:** {1}\n**⏱الوقت:** {2}\n👉**الطلب بواسطة:** {3}"
 
 # All Streaming Lines
-stream_1 : "📡 **Yayın Başladı**\n\n👉**Talep Eden:** {0}\n🔦**Bilgi: **[Buradan]({1})"
-stream_2 : "📡 **URL ile Yayına Başladı **\n\n👉**Talep Eden:** {0}"
-stream_3 : "📡 **Yayın Başladı**\n\n**🔘Başlık:** {0}\n⌛️**Süre**: {1}\n👤**İsteyen:** {2}"
-stream_4 : "📡 **Akış Başlatıldı**\n\n**🔘Başlık:** [{0}]({1})\n⌛️**Süre**: {2}\n👤**İsteyen:** {3}"
+stream_1 : "📡 **تم التشغيل**\n\n👉**الطلب بواسطه:** {0}\n🔦**المعلومات: **[هنا]({1})"
+stream_2 : "📡 **مع URL تم التشغيل **\n\n👉**الطلب بواسطة:** {0}"
+stream_3 : "📡 **تم بدء الأغنية**\n\n**🔘العنوان:** {0}\n⌛️**الوقت**: {1}\n👤**الطلب بواسطة:** {2}"
+stream_4 : "📡 **بدأ الدفق**\n\n**🔘العنوان:** [{0}]({1})\n⌛️**الوقت**: {2}\n👤**الطلب بواسطة:** {3}"
 
 # Inline Buttons
 
 #General Buttons
-CLOSE_BUTTON  : "🗑 Kapat"
-CLOSEMENU_BUTTON  : "🗑 Menüyü Kapat"
-BACK_BUTTON : "⬅ Geri"
-UNBAN_BUTTON : "🗑 Asistanın yasağını kaldır"
+CLOSE_BUTTON  : "🗑 ايقاف"
+CLOSEMENU_BUTTON  : "🗑 قفل الاوامر"
+BACK_BUTTON : "⬅ الرجوع"
+UNBAN_BUTTON : "🗑 الغاء حظر المساعد"
 
 #Lyrics
-L_B_1 : "🚀 Şarkı Sözlerini Şimdi Kontrol Et"
+L_B_1 : "🚀 ضع اسم الاغنية بشكل صحيح"
 
 # Start
-S_B_1 : "🗒 Komutlar"
-S_B_2 : "🔧 Ayarlar"
-S_B_3 : "📨 Destek"
-S_B_4 : "📨 Kanal"
-S_B_5 : "✚ Beni Grubuna ekle"
-S_B_6 : "💡 Git Repo"
-S_B_7 : "👤 Bot Owner"
-S_B_8 : "🔎 Nasıl kullanılır? Komutlar Menüsü."
+S_B_1 : "🗒 الأوامر"
+S_B_2 : "🔧 الاعدادات"
+S_B_3 : "📨 الدعم"
+S_B_4 : "📨 السورس"
+S_B_5 : "✚ اضفني الى مجموعتك"
+S_B_6 : "."
+S_B_7 : "🇸🇾 المطور 🇸🇾"
+S_B_8 : "🔎 المساعدة."
 
 #Help 
-H_B_1 : "Admin Commands"
-H_B_2 : "Play Commands"
-H_B_3 : "Bot Commands"
-H_B_4 : "Extra Commands"
-H_B_5 : "Close Menu"
+H_B_1 : "اوامر الادمن"
+H_B_2 : "اوامر التشغيل"
+H_B_3 : "اوامر البوت"
+H_B_4 : "أوامر إضافية"
+H_B_5 : "إغلاق القائمة"
 
 #PlayMode
-PM_B_1 : "DirectPlay"
-PM_B_2 : "InlineMarkup"
-PM_B_3 : "ChannelPlay"
+PM_B_1 : "اللعب المباشر"
+PM_B_2 : "الازرار الشفافة"
+PM_B_3 : "تشغيل بلقناة"
 
 #Play
-P_B_1 : "🎵 Play Audio"
-P_B_2 : "🎥 Play Video"
-P_B_3 : "🏮 Start Live Stream"
-P_B_4 : "🎵 Play Playlist"
+P_B_1 : "🎵 تشغيل فيديو"
+P_B_2 : "🎥 تشغيل فيديو"
+P_B_3 : "🏮 ابدأ البث المباشر"
+P_B_4 : "🎵 تشغيل قائمة التشغيل"
 
 #Playlist
-PL_B_1 : "🚀 Play Playlist"
-PL_B_2 : "✚ Playlists"
-PL_B_3 : "✚ Additional"
-PL_B_4 : "📡 Play Mode"
+PL_B_1 : "🚀 تشغيل قائمة التشغيل"
+PL_B_2 : "✚ قوائم التشغيل"
+PL_B_3 : "✚ إضافي"
+PL_B_4 : "📡 طريقة اللعب"
 PL_B_5 : "🔄 Del Whole Playlist"
 PL_B_6 : "↗️ Delete Playlist"
 PL_B_7 : "❗️ Yes, I'm sure. Delete it"
@@ -280,7 +280,7 @@ ST_B_2 : "🎥 Vid Quality"
 ST_B_3 : "🎩 Auth Users"
 ST_B_4 : "📱 Dashboard"
 ST_B_5 : "▶️ Play Mode"
-ST_B_6 : "🏳️‍🌈 Language"
+ST_B_6 : "Luange"
 ST_B_7 : "🔄 Clean Mode"
 ST_B_8 : "{0} Low Quality Audio"
 ST_B_9 : "{0} Medium Quality Audio"
